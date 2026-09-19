@@ -1,0 +1,58 @@
+body {
+    background-color: var(--primary-color); /* Usando a cor primária */
+    color: white; /* Texto branco */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#app-container {
+    width: 100%;
+    max-width: 800px; /* Limitar a largura máxima */
+    margin: auto;
+}
+
+#editor-container, #chat-container, #preview-container, #playground-container, #supabase-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav button {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
